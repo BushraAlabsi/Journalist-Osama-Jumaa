@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		Osama Jumaa
+
+	</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app= 'app'>
+
+<!-- login and signup pages -->
+
+	<div class= "container-fluid" ng-controller = 'myCtrl'>
+
+		<div class="nav-menu ">
+			<div class= row>
+      <ul class="nav nav-pills nav-stacked col-md-10" style="margin-left: 10px;">
+        <li ><a href="#!About" ng-show="Eng" ng-click=' home=false' class="menu">Osama Jumaa</a></li>
+        <li ><a href="#!others" ng-show="Eng" ng-click='home=false' class="menu">Statements about Osama</a></li>
+        <li ><a href="#!works" ng-show="Eng" ng-click='home=false' class="menu">Osama's work</a></li>
+        <li ><a href="#!Download" ng-show="Eng" ng-click='home=false' class="menu">Download Osama's book</a></li>
+        <li ><a href="#!festival" ng-show="Eng" ng-click=' home=false' class="menu">Osama's Festival</a></li>
+        <li ><a href="#!About/ar" ng-hide="Eng" ng-click=' home=false' class="menu">أسامة جمعة</a></li>
+        <li ><a href="#!Download" ng-hide="Eng" ng-click='home=false' class="menu">حمّل كتاب أسامة</a></li>
+        
+      </ul>
+      <ul class="nav nav-pills nav-stacked col-md-1">
+      	<li ><a href="#" ng-click='home =true' ng-show="!Eng && !home" class="menu language">الرئيسية</a></li>
+      	<li ><a href="#" ng-click='home=true' ng-show="Eng && !home" class="menu language">Home</a></li>
+       <li ><a  ng-click='Eng =true' ng-show="!Eng && home" class="menu language">English</a></li>
+        <li ><a  ng-click='Eng =false' ng-show="Eng && home" class="menu language">عربي</a></li>
+      </ul>
+  </div>
+      <div ng-view  ></div>
+
+
+      </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

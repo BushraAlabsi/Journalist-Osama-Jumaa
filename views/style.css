@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Cambo');
+
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+p{
+  font-size: 13px;
+  color: grey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.span1 {
+  display:inline-block;
+    border-bottom:1px solid #ff6600;
+    border-width: 3px;
+    padding-bottom:1px;
+    margin-bottom: 30px;
+}
+.span2 {
+  display:inline-block;
+    border-bottom:1px solid #000000;
+    border-width: 3px;
+    padding-bottom:1px;
+    margin-bottom: 30px;
+}
+.span3 {
+  display:inline-block;
+    border-bottom:1px solid #154360;
+    border-width: 3px;
+    padding-bottom:1px;
+    margin-bottom: 30px;
+}
+/* Nav Menu */
+.nav {
+  animation:  moveInRight 1s ease-out;
+}
+.nav>li:not(:last-child){
+  margin-right: 20px;
+}
+
+.nav>li>a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  padding: 10px 0;
+  z-index: 9;
+  transition: all .3s;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: transparent;
+}
+
+.active a::after {
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 3px;
+    background: #ff6600;
+    transition: width .3s;
+}
+
+.nav>li>a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff6600;
+    transition: width .3s;
+}
+
+.nav>li>a:hover::after {
+    width: 70%;
+}
+
+.language {
+  margin-right: 30px;
+}
+
+/* Info */
+.width {
+  display: inline-block;
+  max-width: 55%;
+}
+
+
+.btn {
+  margin: 10px;
+   font-size: 12px;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding: 4px 10px;
+   display: inline-block;
+   border-radius: 100px;
+   background-color: #ff6600;
+   color: #fff;
+   transition: all .2s;
+   border: 3px solid transparent;
+
+   -webkit-box-shadow: 0 0 40px 0 rgba(247, 201, 168, 0.9);
+      -moz-box-shadow: 0 0 40px 0 rgba(247, 201, 168, 0.9);
+           box-shadow: 0 0 40px 0 rgba(247, 201, 168, 0.9);
+}
+
+.btn:focus,
+.btn:hover {
+  color: #ff6600;
+  background-color: #fff;
+  border: 3px solid #ff6600;
+
+  -webkit-box-shadow: 0 0 20px 0 rgba(247, 201, 168, 0.9);
+     -moz-box-shadow: 0 0 20px 0 rgba(247, 201, 168, 0.9);
+          box-shadow: 0 0 20px 0 rgba(247, 201, 168, 0.9);
+}
+
+/* Animale Image */
+
+
+
+/* Video Button */
+
+
+.homepic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        bottom: -585px;
+    }
+
+    80% {
+        bottom: -80;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: -150;
+    }
+}
