@@ -42,7 +42,6 @@ app.config(["$routeProvider", function($routeProvider) {
 
   app.controller('myCtrl', ['$scope','$http','$window',function($scope,$http,$window){
      $scope.home = false;
-     console.log("vuyj",$window.location.hash)
     if($window.location.hash == "#!/" || $window.location.hash == "#!/#myCarousel" || $window.location.hash == "") $scope.home = true;
 
     $scope.Eng = true; //for show and hide in the html elements.
