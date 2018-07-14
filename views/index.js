@@ -37,6 +37,15 @@ app.config(["$routeProvider", function($routeProvider) {
     .when("/others/ar", {
       templateUrl : 'othersAr.html'
     })
+    .when("/contact",{
+      templateUrl : 'contact.html'
+    })
+    .when("/contact/ar",{
+      templateUrl: 'contactAr.html'
+    })
+    .when("/festival/ar", {
+      templateUrl : "festivalAr.html"
+    })
   }])
 
 
